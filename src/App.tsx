@@ -1,5 +1,6 @@
 import React from 'react';
 import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import 'animate.css';
 import Money from './views/Money';
 import Statistics from './views/Statistics';
 import Tags from './views/Tags';

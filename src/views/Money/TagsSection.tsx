@@ -38,7 +38,8 @@ const TagsSection: React.FC<Props> = (props) => {
       props.onChange([...selectedTagIds, tagId]);
     }
   };
-  const getClass = (tagId: number) => selectedTagIds.indexOf(tagId) >= 0 ? 'selected' : '';
+  //按钮动画交互
+  const getClass = (tagId: number) => selectedTagIds.indexOf(tagId) >= 0 ? 'selected animate__animated animate__heartBeat' : 'animate__animated animate__tada';
   return (
     <Wrapper>
       <ol>
